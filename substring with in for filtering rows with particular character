@@ -1,0 +1,6 @@
+From beginning
+
+select distinct city from station where SUBSTRING(city,1,1) in ('a','e','i','o','u')
+
+From end
+select distinct city from station where substring(city,-1,1) in ('a','e','i','o','u')
