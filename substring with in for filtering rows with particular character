@@ -4,3 +4,6 @@ select distinct city from station where SUBSTRING(city,1,1) in ('a','e','i','o',
 
 From end
 select distinct city from station where substring(city,-1,1) in ('a','e','i','o','u')
+
+from beginning and end
+select distinct city from station where substring(city,1,1) in ('a','e','i','o','u') AND substring(city,-1,1)  in ('a','e','i','o','u')
